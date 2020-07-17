@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Lobster|Spicy+Rice&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Document</title>
+</head>
+<body>
+ 
+    <section class="headr1">
+    <div id =inner>
+    
+
+</div>
+            <h1 >AnimleDome Game</h1>
+            <p class="about">
+                This is a simple game to teach children the names and shapes of animals
+            </p>
+            <input type="text" id="name" class="name" placeholder="enter your name"><input type="button" class="button1" onclick="setname()" value="Name">
+        
+    
+    <!--Main -->
+    <section  class="main " >
+        
+            
+                <h2 >How to play and learn in this game?</h2>
+            
+            <p >You should know what animal is in the picture
+                And choose the letters of its name</p>
+                <p>
+                   IN  this game you will learn how to write the names<br>
+                     of animals and the correct pronunciation of them
+                </p>
+            
+                <a href="gamepage.html" class="button"><img src="start-game-button-png-2.png" class="play"></a>
+    </section>
+</section>
+    <div class="footer">
+        <p>&copy; ITI Writen by nermeen & Gehad</p>
+      </div>
+  
+
+      <script>
+        // Retrieve
+    //document.getElementById("inner").innerHTML="Welcom "+document.getElementById("name").value;;
+        function setname()
+        {
+            let Name ="";
+            Name=document.getElementById("name").value;
+            localStorage.setItem("name",Name);
+            document.getElementById("inner").innerHTML="Welcom "+ Name;
+            document.getElementById("inner").style.fontFamily="'Kalam', cursive";
+            document.getElementById("inner").style.fontSize="30px";
+
+        }
+    </script>
+    
+</body>
+</html>

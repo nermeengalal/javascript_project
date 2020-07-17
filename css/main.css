@@ -1,0 +1,94 @@
+
+.headr1 {
+	padding: 3em 0 8em 0 ;
+    font-size: larger;
+    background-attachment: fixed;
+	background-position: top left;
+	background-size: auto;
+    overflow: hidden;
+	position: relative;
+	text-align: center;
+	background: linear-gradient(rgba(156, 163, 177, 0.8), rgba(173, 178, 185, 0)),
+	#a1962e;
+}
+.button1:hover
+{
+	background-color: #a1962e;
+
+}
+h1{
+	font-size: 40px;
+	font-family: 'Lobster', cursive;
+}
+.play{
+	height: 70px;
+	width: 150px;
+}
+ .button {
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+  }
+  .button1
+  {
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 30px;
+	margin: 3px 2px;
+	cursor: pointer;
+	font-family: 'Kalam', cursive;
+	width: 100px;
+	height: 50px;
+	border-radius: 5px;
+
+  }
+  .play:hover
+  {
+	height: 80px;
+	width: 160px;
+
+  }
+  .footer {	
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color:black;
+	color: white;
+	text-align: center;
+	opacity: .7;
+    position:relative;
+    font-family: 'Righteous', cursive;
+	font-size: 30px;
+ }
+ .main
+ {
+	background-attachment: fixed;
+	background-position: top left;
+	background-size: auto;
+    overflow: hidden;
+	position: relative;
+	text-align: center;
+	font-family: 'Kalam', cursive;
+	font-size: 30px;
+	
+ }
+ .about
+ {
+	font-family: 'Kalam', cursive;
+	font-size: 30px;
+ }
+ .name
+ {
+	 border: none;
+	 width: 300px;
+	 height: 50px;
+	 border-radius: 5px;
+ }
+ 

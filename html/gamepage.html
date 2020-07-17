@@ -1,0 +1,344 @@
+<!doctype>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Lobster|Spicy+Rice&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href='../css/style-tablet.css' media='screen and (min-width: 501px) and (max-width: 768px)'>
+        <link rel='stylesheet' href='../css/style-smartphone.css' media='screen and (max-width: 500px)'>
+       
+    </head>
+    <body onload="imgandsound()">
+       
+         <div class="row header" >
+             <p class="col-4 name" id="ssp">AnimleDome</p>
+             <ul>
+                <li class="col-1" ></li>
+                 <li class="col-2" ><a id="ssp1" href="#">Home</a></li>
+                 <li class="col-2 " ><a id="ssp2" href="#">about</a></li>
+                 <li class="col-2 "><a id="ssp3" href="#">contact</a></li>
+             </ul>
+         </div>
+         
+         <div class="alert">
+          <span class="closebtn" onclick="reloud()">&times;</span> 
+          <strong>Success! </strong> this is the Right Answer Keep Going.O_o
+        </div>
+          <div class="alertf" style="  background-color:#f44336;">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+          <strong>Danger! </strong> this is wrong answer.O_o
+        </div>
+        <br style=" clear: both;">
+         <div class="row">
+            <div class="col-7" id="midcontent">
+                <div class="row">
+                        <div id="divdrop1" class="drag col-2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        
+                       <div id="divdrop2" class="drag col-2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        
+                        <div id="divdrop3" class="drag col-2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+                        <div id="divdrop4" class="drag col-2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        
+                       <div id="divdrop5" class="drag col-2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        
+                        <div id="divdrop6" class="drag col-2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+                        <div id="divdrop7" class="drag col-2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                       
+                </div>
+
+                <div class="row butimg" >
+                    <form method="post" class="col-4" action="home.html" >
+                    <button type="button" class="button1" onclick="subm()" style="position: relative;top: 10px;">submit</button>
+                    </form> 
+                    <div>
+                        <img src="" class="col-8 imgword" onmousemove="sound()" id="iword">
+                        <audio id="audio1" autoplay>
+                                <source src="">
+                              Your browser does not support the audio element.
+                         </audio>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-5">
+                <div class="row" style="position: relative;bottom: 20px;">
+
+                 <div class="divimg col-2"  id="div2">
+                    <img src="../img/C.jpg" class="imgs" draggable="true" 
+                    ondragstart="drag(event)" name="C" id="C" ondragend="dragEnd(event)">
+                    
+                  </div>
+                  
+                 <div class="divimg col-2"  id="div3">
+                 <img src="../img/A.jpg" class="imgs" draggable="true" 
+                    ondragstart="drag(event)" name="A" ondragend="dragEnd(event)" id="A">
+                 </div>
+                  
+                 <div class="divimg col-2" id="div4">
+                        <img src="../img/T.jpg" class="imgs" draggable="true" 
+                           ondragstart="drag(event)" ondragend="dragEnd(event)" name="T" id="T">
+                        </div>
+                        <div class="divimg col-2"  id="div5">
+                                <img src="../img/B.jpg" class="imgs" draggable="true" 
+                                ondragstart="drag(event)" name="B" id="B" ondragend="dragEnd(event)">
+                                
+                              </div>
+                              <div class="divimg col-2"  id="div6">
+                                    <img src="../img/D.jpg" class="imgs" draggable="true" 
+                                       ondragstart="drag(event)" ondragend="dragEnd(event)" name="D" id="D">
+                                    </div>
+                                    <div class="divimg col-2" id="div7">
+                                            <img src="../img/E.jpg" class="imgs" draggable="true" 
+                                               ondragstart="drag(event)" ondragend="dragEnd(event)" name="E" id="E">
+                                            </div>
+                                    </div>
+                                        <div class="row" style="position: relative;bottom: 20px;">
+                                                
+                                        <div class="divimg col-2"  id="div8">
+                                        <img src="../img/F.jpg" class="imgs" draggable="true" 
+                                        ondragstart="drag(event)" name="F" id="F" ondragend="dragEnd(event)"></div>
+                                                                  
+                                        <div class="divimg col-2"  id="div9">
+                                        <img src="../img/G.jpg" class="imgs" draggable="true" 
+                                        ondragstart="drag(event)" ondragend="dragEnd(event)" name="G" id="G"></div>
+                                        <div class="divimg col-2" id="div10">
+                                       <img src="../img/H.jpg" class="imgs" draggable="true" 
+                                        ondragstart="drag(event)" name="H" ondragend="dragEnd(event)" id="H"> </div> 
+                                       
+                                         
+                                       <div class="divimg col-2"  id="div11">
+                                        <img src="../img/I.jpg" class="imgs" draggable="true" 
+                                       ondragstart="drag(event)" name="I" id="I" ondragend="dragEnd(event)"> </div>
+                                      <div class="divimg col-2"  id="div12">
+                                     <img src="../img/J.jpg" class="imgs" draggable="true" ondragstart="drag(event)" ondragend="dragEnd(event)"
+                                     name="J" id="J">
+                                      </div>
+                                    <div class="divimg col-2" id="div13">
+                                     <img src="../img/K.jpg" class="imgs" draggable="true" 
+                                     ondragstart="drag(event)" ondragend="dragEnd(event)" name="K" id="K"> </div></div>
+
+                                     <div class="row" style="position: relative;bottom: 20px;">
+                                     <div class="divimg col-2"  id="div14">
+                                            <img src="../img/L.jpg" class="imgs" draggable="true" 
+                                            ondragstart="drag(event)" name="L" id="L" ondragend="dragEnd(event)">
+                                            
+                                          </div>              
+                                          <div class="divimg col-2"  id="div15">
+                                                <img src="../img/M.jpg" class="imgs" draggable="true" 
+                                                ondragstart="drag(event)" name="M" id="M" ondragend="dragEnd(event)">
+                                                
+                                              </div>   
+                                              <div class="divimg col-2"  id="div16">
+                                                    <img src="../img/N.jpg" class="imgs" draggable="true" 
+                                                    ondragstart="drag(event)" name="N" id="N" ondragend="dragEnd(event)">
+                                          </div> 
+                                                                                                            
+                                          <div class="divimg col-2"  id="div17">
+                                                <img src="../img/O.jpg" class="imgs" draggable="true" 
+                                                ondragstart="drag(event)" name="O" id="O" ondragend="dragEnd(event)">
+                                      </div>   
+                                      <div class="divimg col-2"  id="div18">
+                                            <img src="../img/P.jpg" class="imgs" draggable="true" 
+                                            ondragstart="drag(event)" name="P" id="P" ondragend="dragEnd(event)">
+                                  </div>  
+                                  <div class="divimg col-2"  id="div19">
+                                        <img src="../img/Q.jpg" class="imgs" draggable="true" 
+                                        ondragstart="drag(event)" name="Q" id="Q" ondragend="dragEnd(event)">
+                              </div>  
+                              </div>
+                              <div class="row" style="position: relative;bottom: 20px;">
+                              <div class="divimg col-2"  id="div20">
+                                    <img src="../img/R.jpg" class="imgs" draggable="true" 
+                                    ondragstart="drag(event)" name="R" id="R" ondragend="dragEnd(event)">
+                          </div> 
+
+                          <div class="divimg col-2"  id="div21">
+                                <img src="../img/S.jpg" class="imgs" draggable="true" 
+                                ondragstart="drag(event)" name="S" id="S" ondragend="dragEnd(event)">
+                      </div>
+                      <div class="divimg col-2"  id="div22">
+                            <img src="../img/U.jpg" class="imgs" draggable="true" 
+                            ondragstart="drag(event)" name="U" id="U" ondragend="dragEnd(event)">
+                  </div> 
+                 
+                  <div class="divimg col-2"  id="div23">
+                        <img src="../img/V.jpg" class="imgs" draggable="true" 
+                        ondragstart="drag(event)" name="V" id="V" ondragend="dragEnd(event)">
+              </div> 
+
+              <div class="divimg col-2"  id="div24">
+                    <img src="../img/W.jpg" class="imgs" draggable="true" 
+                    ondragstart="drag(event)" name="W" id="W" ondragend="dragEnd(event)">
+          </div> 
+
+          <div class="divimg col-2"  id="div25">
+                <img src="../img/X.jpg" class="imgs" draggable="true" 
+                ondragstart="drag(event)" name="X" id="X" ondragend="dragEnd(event)">
+      </div>
+    </div> 
+    <div class="row" style="position: relative;bottom: 20px;">
+      <div class="divimg col-2"  id="div26">
+            <img src="../img/Y.jpg" class="imgs" draggable="true" 
+            ondragstart="drag(event)" name="Y" id="Y" ondragend="dragEnd(event)">
+  </div> 
+  <div class="divimg col-2"  id="div27">
+        <img src="../img/Z.jpg" class="imgs" draggable="true" 
+        ondragstart="drag(event)" name="Z" id="Z" ondragend="dragEnd(event)">
+</div>
+<div class="divimg col-2"  id="div28">
+    <img src="../img/C.jpg" class="imgs" draggable="true" 
+    ondragstart="drag(event)" name="C" id="C1" ondragend="dragEnd(event)">
+    
+  </div>
+  <div class="divimg col-2" id="div29">
+    <img src="../img/E.jpg" class="imgs" draggable="true" 
+       ondragstart="drag(event)" ondragend="dragEnd(event)" name="E" id="E1">
+    </div>
+    <div class="divimg col-2"  id="div30">
+      <img src="../img/N.jpg" class="imgs" draggable="true" 
+      ondragstart="drag(event)" name="N" id="N1" ondragend="dragEnd(event)">
+</div> 
+<div class="divimg col-2"  id="div31">
+  <img src="../img/B.jpg" class="imgs" draggable="true" 
+  ondragstart="drag(event)" name="B" id="B1" ondragend="dragEnd(event)">
+  </div>
+  <div class="divimg col-2"  id="div32">
+    <img src="../img/F.jpg" class="imgs" draggable="true" 
+    ondragstart="drag(event)" name="F" id="F1" ondragend="dragEnd(event)"></div>
+
+    <div class="divimg col-2"  id="div33">
+      <img src="../img/A.jpg" class="imgs" draggable="true" 
+         ondragstart="drag(event)" name="A" ondragend="dragEnd(event)" id="A1">
+      </div>
+                              
+</div>
+            </div>
+         </div>
+
+
+
+
+         <script>
+              var mydata=[
+                 {word:"BEAR",srcimg:"../animal/bear.gif",srcsound:"../sound/bear.mp3"},
+                 {word:"BEE",srcimg:"../animal/bee.gif",srcsound:"../sound/bee.ogg"},
+                 {word:"BIRD",srcimg:"../animal/bird.gif",srcsound:"../sound/bird.mp3"},
+                 {word:"CAMEL",srcimg:"../animal/camel.gif",srcsound:"../sound/camel.mp3"},
+                 {word:"CAT",srcimg:"../animal/cat.gif",srcsound:"../sound/cat.ogg"},
+                 {word:"CHICKEN",srcimg:"../animal/chicken.gif",srcsound:"../sound/chicken.mp3"},
+                 {word:"COW",srcimg:"../animal/cow.gif",srcsound:"../sound/cow.mp3"},
+                 {word:"DOG",srcimg:"../animal/dog.gif",srcsound:"../sound/dog.ogg"},
+                 {word:"DONKEY",srcimg:"../animal/donky.gif",srcsound:"../sound/donkey.ogg"},
+                 {word:"DUK",srcimg:"../animal/Duk.gif",srcsound:"../sound/duck.ogg"},
+                 {word:"FISH",srcimg:"../animal/fish.gif",srcsound:"../sound/fish.mp3"},
+                 {word:"FROG",srcimg:"../animal/frog.gif",srcsound:"../sound/frog.mp3"},
+                 {word:"GIRAFFE",srcimg:"../animal/giraffe.gif",srcsound:"../sound/giraffe.mp3"},
+                 {word:"HORSE",srcimg:"../animal/horse.gif",srcsound:"../sound/horse.mp3"},
+                 {word:"LION",srcimg:"../animal/lion.gif",srcsound:"../sound/lion.ogg"},
+                 {word:"MONKEY",srcimg:"../animal/monky.gif",srcsound:"../sound/monkey.ogg"},
+                 {word:"PANDA",srcimg:"../animal/panda.gif",srcsound:"../sound/panda.mp3"},
+                 {word:"PENGUIN",srcimg:"../animal/penguin.gif",srcsound:"../sound/penguin.mp3"},
+                 {word:"RABBIT",srcimg:"../animal/rabbits.gif",srcsound:"../sound/rabbit.mp3"},
+                 {word:"SOURCE",srcimg:"../animal/source.gif",srcsound:"../sound/source.mp3"},
+                 {word:"TIGER",srcimg:"../animal/tiger.gif",srcsound:"../sound/tiger.mp3"}
+              ];
+                 
+                var count = localStorage.on_load_counter || 0;
+                function imgandsound()
+                {
+                    document.getElementById("iword").src=mydata[parseInt(localStorage.on_load_counter)].srcimg;
+                    document.getElementById("audio1").src=mydata[parseInt(localStorage.on_load_counter)].srcsound;
+                  ///div switch
+                    for( i=0; i<mydata[parseInt(localStorage.on_load_counter)].word.length;i++)
+                 {
+                   document.getElementsByClassName('drag')[i].style.display="block";
+                   
+                 }
+                }
+                function allowDrop(event) 
+                {
+                  event.preventDefault();
+                }
+                function drag(event) 
+                {
+                  var el = event.target;
+                  var parent = el.getAttribute("data-parent");
+        
+                  if(!parent)
+                  {
+                     el.setAttribute("data-parent", el.parentNode.id);
+                  }
+        
+                  event.dataTransfer.setData("draggableID", el.id);
+                  
+                }
+               
+               function drop(event) 
+               {
+                 event.preventDefault();
+                 var data = event.dataTransfer.getData("draggableID");
+                 var childNodes = event.target.childNodes;
+                 var reg1=/^divdrop/;
+                 var t=reg1.test(event.target.id);
+              if(childNodes.length==0 &&t==true)
+               {
+                event.target.appendChild(document.getElementById(data));
+               }
+               }
+            
+          function dragEnd( event){
+        if(event.dataTransfer.dropEffect == "none"){
+             var parent = document.getElementById(event.target.getAttribute("data-parent"));
+            parent.appendChild(event.target);
+        }
+    }  
+            function subm()
+            {
+                var item;
+                var word=mydata[parseInt(localStorage.on_load_counter)].word;
+                var tf=true;
+                var divs= document.querySelectorAll("div.drag img");
+                for(item=0;item<word.length;item++)
+                {
+                   if(divs[item].name!=word[item]) 
+                   {
+                    tf=false;
+                   }
+                }
+                if(tf==true)
+                {
+                    document.getElementsByClassName('alert')[0].style.display="block";
+                }
+                else
+                {
+                  document.getElementsByClassName('alertf')[0].style.display="block";
+                }
+                
+
+            }
+            function reloud(){
+              document.getElementsByClassName('alert')[0].style.display='none';
+              if(count==19)
+                   {
+                    localStorage.removeItem('on_load_counter');
+                    count = localStorage.on_load_counter || 0;
+                    
+                   }
+                   
+                    localStorage.on_load_counter = ++count;
+                    location.reload();
+            }
+
+            function sound()
+            {
+                var audio1=document.getElementsByTagName("audio")[0];
+                audio1.autoplay=true;
+                audio1.play();
+            }
+         
+         </script>
+    </body>
+</html>
